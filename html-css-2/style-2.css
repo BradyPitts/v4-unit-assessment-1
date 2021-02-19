@@ -105,10 +105,11 @@ article{
   display: block;
   margin: 0px;
   padding-top: 10%;
-  height: 65%;
-  width: 75%;
+  height: 80%;
+  width: 80%;
   border-radius: 300px;
   background-color: green;
+  box-sizing: border-box;
 }
 
 #brown {
@@ -128,10 +129,11 @@ h6{
 #blue{
   margin: 0px;
   padding-top: 10%;
-  height: 65%;
-  width: 75%;
+  height: 80%;
+  width: 80%;
   border-radius: 100px;
   background-color: blue;
+  box-sizing: border-box;
 }
 
 #fish {
