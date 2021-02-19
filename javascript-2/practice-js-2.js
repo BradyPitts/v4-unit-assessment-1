@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = `Git is an extenstion to your command line that allows you to create navigate and upload/download files to GitHub.`
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = `GitHub is an online repository that allows you to save and access projects from you Git/command line and share with others easily. Almost like a Google Docs.`
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -35,6 +39,11 @@
 
 //CODE HERE
 
+let init = {
+    description: 'the init function initializes a folder as a repository',
+    code: 'git init'
+}
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,6 +51,11 @@
 */
 
 //CODE HERE
+
+let clone = {
+    description: 'Clone allows a user to link their GitHub repository with their Git/command line.',
+    code: 'git clone GitHubURL'
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -51,6 +65,11 @@
 
 //CODE HERE
 
+let status = {
+    description: 'Status will tell the user what the current status is with their Git. Such as, modified; prompting the user to add commit and push',
+    code: 'git status'
+}
+
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,6 +77,11 @@
 */
 
 //CODE HERE
+
+let add = {
+    description:'Add allows the user to add files to be commited then pushed up to GitHub.',
+    code:'git add <.> or <file>'
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -67,6 +91,11 @@
 
 //CODE HERE
 
+let commit = {
+    description:'Commit allows the user to prep files for uploading and add a coment to their push describing changes made.',
+    code:'git commit -m"coments go here"'
+}
+
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'addRemote' with 'description' and 'code' properties
@@ -75,6 +104,11 @@
 
 //CODE HERE
 
+let addRemote = {
+    description:'Add Remote allows a user to add a repository to GitHub without an existing destination',
+    code:'git remote add origin GitHubURL'
+}
+
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -82,3 +116,8 @@
 */
 
 //CODE HERE
+
+let push = {
+    description:'Push allows a user to upload their repository to GitHub.',
+    code:'git push'
+}
