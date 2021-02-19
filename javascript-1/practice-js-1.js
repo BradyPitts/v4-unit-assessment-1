@@ -42,10 +42,10 @@ function sum (num1,num2){
 //CODE HERE
 
 function trueOrFalse (data){
-  if (data = truthy){
+  if (data = true){
     return true;
   }
-  else if (data = falsy) {
+  else if (data = false) {
     return false;
   }
 }
@@ -128,10 +128,10 @@ let middleNums = numbers.slice(1,4)
 //CODE HERE
 
 let me = {
-  fistName: 'Brady',
+  firstName: 'Brady',
   state: 'Utah',
   age: 25,
-  greeter: `Hello! My name is ${me.fistName} and I live in ${me.state}`
+  greeter: function (){ return `Hello! My name is ${me.fistName} and I live in ${me.state}`}
 }
 
 //////////////////PROBLEM 12////////////////////
@@ -226,11 +226,13 @@ let secondFunctionScope = ['global','functional']
 
 //CODE HERE
 
-function firstItem (array, cb){
-
+function firstItem (array,cb){
+  cb (array[0])
 }
 
-cb (array[0], firstItem)
+
+
+
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -242,6 +244,15 @@ cb (array[0], firstItem)
 
 //CODE HERE
 
+function isItBob (obj,cb){
+  if (obj.name = 'Bob'){
+    cb(true)
+  }
+  else if (obj.name != 'Bob') {
+    cb(false)
+  }
+}
+
 //////////////////PROBLEM 17////////////////////
 /*
   Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
@@ -250,6 +261,13 @@ cb (array[0], firstItem)
 */
 
 //CODE HERE
+
+function giveMeDoubles (arr,cb){
+  for (i = 0; i < arr.length; i++){
+    arr[i] *= 2;
+  }
+  cb(arr)
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -286,7 +304,7 @@ function carFactory (make, model, year){
   if (year > 2018){
     car.isNew = true;
   }
-  else if (year <= 2018){
+  else{
     car.new = false;
   }
   return car;
